@@ -3,17 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <title>チャット</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./static/style.css" />
   </head>
-  <body>
-    <h1 class="app-title">チャット</h1>
-    <ul>
-      <!-- posts -->
-    </ul>
-    <form action="/send" method="post">
-      <input id="message-input" type="text" name="message" />
-      <button type="submit">送信</button>
-    </form>
-    <script src="/script.js"></script>
+  <body class="wrap">
+    <div class="content">
+      <h1 class="app-title">チャット</h1>
+      <ul>
+        <!-- posts -->
+      </ul>
+
+      <h1 class="heading-lv1 text-center">Profile</h1>
+      <figure class="profile-image">
+        <img src="./images/profile.jpg" alt="ユーザーのプロフィール画像" width="300" height="300">
+      </figure>
+  
+      <h2 class="heading-lv2 heading-margin text-center">ユーザーネーム</h2>
+      <p class="text text-center">太郎</p>
+  
+      <h3 class="heading-lv3 heading-margin text-center">自己紹介</h3>
+      <p class="text text-center">東京大学です<br>サッカー部です</p>
+      
+      <form action="/send" method="post" class="text text-center">
+        <input id="message-input" type="text" name="message" />
+        <button type="submit">送信</button>
+      </form>
+      <script src="./static/script.js"></script>
+    </div>
   </body>
 </html>
